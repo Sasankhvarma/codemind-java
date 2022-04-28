@@ -4,14 +4,22 @@ class kesava
 {
     public static void main(String args[])
     {
-        int n,i,j;
+        int n;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        int i,j;
+        for(i=0;i<n;i++)
         {
-            for(j=1;j<=n-i+1;j++)
+            for(j=0;j<n;j++)
             {
-                System.out.printf("%d",j);
+                if(i==j)
+                {
+                    System.out.printf("0");
+                }
+                else
+                {
+                    System.out.printf("x");
+                }
             }
             System.out.printf("
 ");
