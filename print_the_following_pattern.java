@@ -12,14 +12,7 @@ class kesava
         {
             for(j=0;j<n;j++)
             {
-                if(i==j)
-                {
-                    System.out.printf("0");
-                }
-                else
-                {
-                    System.out.printf("x");
-                }
+                System.out.printf("%d ",n-j);
             }
             System.out.printf("
 ");
