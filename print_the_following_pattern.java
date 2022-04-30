@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class kesava
+class ganesh
 {
     public static void main(String args[])
     {
@@ -10,9 +10,16 @@ class kesava
         int i,j;
         for(i=0;i<n;i++)
         {
-            for(j=0;j<n-i;j++)
+            for(j=0;j<n;j++)
             {
-                System.out.printf("%c ",(n-i-1)+65);
+                if(i==j || i==n-j-1)
+                {
+                    System.out.printf("x");
+                }
+                else
+                {
+                    System.out.printf("0");
+                }
             }
             System.out.printf("
 ");
